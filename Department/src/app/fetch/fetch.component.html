@@ -1,0 +1,18 @@
+<body align="center">
+<h1>Fetch Department</h1>
+        <table border ="2" align="center" >
+                <tr>
+                    <th>Department Id</th>
+                    <th>Department Name</th>
+                    <th>Operations</th>
+                </tr>
+                <tr *ngFor="let d of department">
+                    <td>
+                        {{d.deptId}}
+                    </td>
+                    <td>{{d.deptName}}</td>
+                    <td><button type="button" (click)="delete(d.deptId)" >Delete</button></td>
+                </tr>
+            </table>
+            
+</body>

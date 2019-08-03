@@ -1,0 +1,43 @@
+<div>
+    <h1>2way</h1>
+    <table border = "1" cellpadding = 5 cellspacing = 2 align = center> 
+        
+            <tr>
+                    <td>
+                        First Name
+                    </td>
+                    <td ><input type = "text" [(ngModel)]="employee.FirstName"></td>
+                </tr>
+                
+                <tr>
+                        <td>
+                            Last Name
+                        </td>
+                     <td><input type = "text" [(ngModel)]="employee.LastName"></td>
+                    </tr>
+                    <tr>
+                            <td>
+                                Gender
+                            </td>
+                         <td> <input type = "text" [(ngModel)]="employee.Gender"></td>
+                        </tr>        
+    </table>
+    <br>
+    <br>
+    <h3>Displaying</h3>
+    <table border = "1" cellpadding = 5 cellspacing =2 width = 200 align = center>
+        <tr>
+                <td>First Name</td>
+                <td>{{employee.FirstName |uppercase}}</td>
+        </tr>
+
+        <tr>
+            <td>LastName</td>
+                <td>{{employee.LastName}}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{employee.Gender}}</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,22 @@
+<!-- <p *ngFor= "let empI of employeeObj.id" >
+        {{empI}}
+</p>
+<p>{{employeeObj.name}}</p>
+<p>{{employeeObj.sal}}</p> -->
+
+    <table border = "1" cellpadding = "5" cellspacing = "2" align = "center" width = "300" height = "200"> 
+        <tr mydir>
+            <td> 
+                ID
+            </td>
+            <td>Name</td>
+            <td>Salary</td>
+            <td>Gender</td>
+        </tr>
+        <tr *ngFor="let emp of employeeObj" myDir1>  
+           <td>{{emp.id }}</td> 
+            <td>{{emp.name |mypipe:emp.gender:emp.name |uppercase }}</td>
+            <td>{{emp.sal}}</td>
+            <td>{{emp.gender |uppercase}}</td>
+        </tr>
+    </table>

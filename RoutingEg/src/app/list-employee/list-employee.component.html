@@ -1,0 +1,21 @@
+<body align="center">
+    
+        <h3>List Employee Modules</h3>
+        <table border = "2" cellpadding = "5" cellspacing = "2"  align="center" width = "500" height = "200"> 
+                <tr mydir>
+                    <td> 
+                        ID
+                    </td>
+                    <td>Name</td>
+                    <td>Salary</td>
+                    <td>Gender</td>
+                </tr>
+                <tr *ngFor="let empInfo of employees">  
+                   <td>{{empInfo.id}}</td> 
+                    <td>{{empInfo.name |uppercase }}</td>
+                    <td>{{empInfo.sal}}</td>
+                    <td>{{empInfo.gender |uppercase}}</td>
+                    <td><button type="button" (click)=delete(empInfo.id)>Delete</button></td>
+                </tr>
+            </table>
+</body>

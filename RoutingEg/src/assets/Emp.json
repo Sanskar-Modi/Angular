@@ -1,0 +1,26 @@
+[
+	{
+	"id":101,
+	"name":"Sanskar Modi",
+	"sal":20000,
+	"gender":"Male"
+	},
+	{
+	"id":102,
+	"name":"Sneha Modi",
+	"sal":20000,
+	"gender":"Female"
+	},
+	{
+	"id":103,
+	"name":"Shubham Khuteta",
+	"sal":20000,
+	"gender":"Male"
+	},
+	{
+	"id":104,
+	"name":"Raj Mittal",
+	"sal":25000,
+	"gender":"Male"
+	}
+]

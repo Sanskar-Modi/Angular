@@ -1,0 +1,13 @@
+<div *ngFor="let emp1 of employeeObj1">
+    <p>{{emp1.id}}</p>
+  
+</div>
+<button (click) = "check()">Hide/Show</button>
+<div *ngIf="!isCollapsed">
+
+    <div *ngFor="let emp1 of employeeObj1">
+        <p >{{emp1.name}}
+            {{emp1.sal}}
+        </p>
+    </div>
+</div>

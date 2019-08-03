@@ -1,0 +1,32 @@
+<body align="center">
+    <h3>Add Employees</h3>
+    <form #details="ngForm" (ngSubmit)="add(details.value)">
+        <div align="center">
+            <span>
+                Id
+            </span>
+            <input type="text" name="eid" ngModel>
+        </div>
+        <div align="center">
+            <span>
+                Name
+            </span>
+            <input type="text" name="ename" ngModel>
+        </div>
+        <div align="center">
+            <span>
+                Salary
+            </span>
+            <input type="text" name="esal" ngModel>
+        </div>
+        <div>
+            <span>
+                Gender
+            </span>
+            <input type="text" name="egender" ngModel>
+        </div>
+        <div>
+            <button type="submit">Add</button>
+        </div>
+    </form>
+</body>
